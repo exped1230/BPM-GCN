@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>NKU-CVLab</title>
+  <link rel="icon" type="image/x-icon" href="static/images/logo.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Looking into Gait for Perceiving Emotions via Bilateral Posture and Movement Graph Convolutional Networks</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">Yingjie Zhai<sup>*</sup><sup>1</sup>,</span>
+              <span class="author-block">
+              	<a href="https://scholar.google.com/citations?user=A6V0JDAAAAAJ&hl=zh-CN" target="_blank">Guoli Jia<sup>*</sup><sup>1</sup>, </a>
+              </span>
+			  <span class="author-block">
+			  	<a href="https://users.cs.cf.ac.uk/Yukun.Lai/" target="_blank">Yu-Kun Lai<sup>2</sup>, </a>
+			  </span>
+			  <span class="author-block">
+			  	<a href="https://scholar.google.com/citations?hl=zh-CN&user=9jH5v74AAAAJ" target="_blank">Jing Zhang<sup>3</sup>, </a>
+			  </span>
+			  <span class="author-block">
+				<a href="http://cv.nankai.edu.cn/" target="_blank">Jufeng Yang<sup>1</sup>, </a>
+			  </span>
+			  <span class="author-block">
+			  	<a href="https://scholar.google.com/citations?hl=zh-CN&user=RwlJNLcAAAAJ" target="_blank">Dacheng Tao<sup>3</sup></a>
+			  </span>
+			</div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup> VCIP & TMCC & DISSec, College of Computer, Nankai University</span>
+					<span class="author-block"><sup>2</sup> School of Computer Science and Informatics, Cardiff University </span>
+                    <span class="author-block"><sup>3</sup> School of Computer Science, Faculty of Engineering, Sydney University </span>
+					<span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="./static/pdfs/TAFFC_BPM_GCN.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/zyjwuyan/egait_journal" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+				
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Emotions can be perceived from a person’s gait, i.e., their walking style. Existing methods on gait emotion recognition mainly leverage the posture information as input, but ignore
+            the body movement, which contains complementary information
+            for recognizing emotions evoked in the gait. In this paper, we
+            propose a Bilateral Posture and Movement Graph Convolutional
+            Network (BPM-GCN) that consists of two parallel streams,
+            namely posture stream and movement stream, to recognize
+            emotions from two views. The posture stream aims to explicitly
+            analyse the emotional state of the person. Specifically, we design a
+            novel regression constraint based on the hand-engineered features
+            to distill the prior affective knowledge into the network and boost
+            the representation learning. The movement stream is designed
+            to describe the intensity of the emotion, which is an implicitly
+            cue for recognizing emotions. To achieve this goal, we employ
+            a higher-order velocity-acceleration pair to construct graphs, in
+            which the informative movement features are utilized. Besides, we
+            design a PM-Interacted feature fusion mechanism to adaptively
+            integrate the features from the two streams. Therefore, the
+            two streams collaboratively contribute to the performance from
+            two complementary views. Extensive experiments on the largest
+            benchmark dataset Emotion-Gait show that BPM-GCN performs
+            favorably against the state-of-the-art approaches (with at least
+            4.59% performance improvement).
+          </p>
+		  
+		  <p>
+			 <img src="static/images/motivation.png" alt="Additional Results" class="center-image blend-img-background"/>
+		  </p>
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Paper method -->
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Methodology</h2>
+        <div class="content has-text-justified">
+          <img src="static/images/method.png">
+		  
+		  <h4> Overview </h4>
+          <p>
+            A skeleton-based gait is represented by a sequence of 3D
+            joint coordinates. It can be denoted as C × T × N, where
+            C is the attribute dimension of a joint (e.g., if we represent
+            each joint with 3D coordinates, it is 3). T is the length of
+			the temporal sequence, and N denotes the number of joints in
+			 a single frame.
+			<br>
+			As shown in the Figure, the proposed Bilateral Posture and
+			Movement Graph Convolutional Network (BPM-GCN) consists
+			of two streams. One is the posture stream that aims
+			to extract emotional information from the person’s posture
+			(i.e., joint position, the angles between joints, the distance
+			between joints, and body area), and the other is the movement
+			stream that leverages the velocity and acceleration to model
+			the person’s emotions.
+          </p>
+		  
+		  <h4> Posture Stream and Affective Constraint </h4>
+		  <p>
+			  The posture stream takes the joint coordinates based graph as
+			  input and outputs the emotion prediction. We divide the posture stream into
+			  two branches, i.e., classification branch and regression branch,
+			  where they share weights except for the last fully-connected
+			  layers. The first branch outputs the classification prediction
+			  for the emotions and the second branch distills the knowledge
+			  from the posture-based hand-crafted affective features via a
+			  regression constraint. Such an affective constraint can bridge
+			  the gap between the posture and emotion, and thus benefits
+			  the stream to learn more discriminative representations.
+		  </p>
+		  
+		  <h4> Movement Stream </h4>
+		  <p>
+			  The movement stream predicts the human emotions from the
+			  movement attributes of human joints. It is based on the
+			  fact that the movement attributes have closely relation
+			  with the intensity of emotion, which is a implicit cue
+			  for predicting human emotions. Note the movement stream
+			  contains only one classification branch and has no regression
+			  branch with it. This is because the posture based affective
+			  features have been well-defined in the literature and can
+			  be easily computed based on joint positions, while it is
+			  a challenging task to build a similar constraint with velocity
+			  and acceleration as input. We are considering investigating
+			  such a constraint in the future.
+		  </p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+		@article{zhai2024Looking,
+		  author={Zhai, Yingjie and Jia, Guoli and Lai, Yu-Kun and Zhang, Jing and Yang, Jufeng and Tao, Dacheng}
+		  journal={IEEE Transactions on Affective Computing}, 
+		  title={Looking into Gait for Perceiving Emotions via Bilateral Posture and Movement Graph Convolutional Networks}, 
+		  year={2024}
+		}
+	  </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">this</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
