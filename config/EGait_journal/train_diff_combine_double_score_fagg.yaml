@@ -1,0 +1,53 @@
+work_dir: ../egait_runs/work_diff_combine_fagg/fagg_att_cascade_st
+model_saved_name: ../egait_runs/runs_diff_combine_fagg/fagg_att_cascade_st
+# feeder
+seed: 4
+feeder: feeders.feeder_same_combine.Feeder
+train_ratio: 0.8
+val_ratio: 0.0
+test_ratio: 0.1
+train_feeder_args:
+  random_choose: True
+  random_move: True
+  window_size: 48
+  data_p_path: /home/ubuntu/jgl/datasets/EGait-dataset/balance/train_joint.npy
+  data_m_path: /home/ubuntu/jgl/datasets/EGait-dataset/balance/train_movement.npy
+  label_path: /home/ubuntu/jgl/datasets/EGait-dataset/balance/train_label.npy
+  feature_path: /home/ubuntu/jgl/datasets/EGait-dataset/balance/train_affective.npy
+  debug: False
+  normalization: False
+
+test_feeder_args:
+  data_p_path: /home/ubuntu/jgl/datasets/EGait-dataset/balance/test_joint.npy
+  data_m_path: /home/ubuntu/jgl/datasets/EGait-dataset/balance/test_movement.npy
+  label_path: /home/ubuntu/jgl/datasets/EGait-dataset/balance/test_label.npy
+  feature_path: /home/ubuntu/jgl/datasets/EGait-dataset/balance/test_affective.npy
+  normalization: False
+# model
+save_model: True
+model: model.agcn_diff_combine_score_fagg.Model
+model_args:
+  num_class: 4
+  num_constraints: 31
+  num_point: 16
+  in_channels_p: 3
+  in_channels_m: 8
+  graph: graph.EGait.Graph
+  graph_args:
+    labeling_mode: 'spatial'
+
+#optim
+weight_decay: 0.001
+base_lr: 0.075
+step: [25,50,75,100]
+
+# training
+device: [1]
+batch_size: 32
+test_batch_size: 32
+num_epoch: 125
+nesterov: True
+
+
+
+

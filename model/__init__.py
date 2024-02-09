@@ -1,0 +1,1 @@
+from . import agcn, aagcn,agcn_pro,agcn_pro_hf14,agcn_pro_hf9,agcn_pro_hf8,agcn_pro_hf9and8,agcn_pro_hf14and9,agcn_pro_hf14and8,agcn_vis,agcn_pro_vis,agcn_same_combine,agcn_diff_combine,agcn_diff_combine_score,agcn_diff_combine_score_fagg
