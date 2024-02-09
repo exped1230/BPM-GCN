@@ -18,7 +18,8 @@ This is the official implementation of our **TAFFC 2024** paper.  </br>
 >**Looking into Gait for Perceiving Emotions via Bilateral Posture and Movement Graph Convolutional Networks**<br>
 Yingjie Zhai*, Guoli Jia*, Yu-Kun Lai, Jing Zhang, Jufeng Yang, and Dacheng Tao<br>
 <i>IEEE Transactions on Affective Computing (TAFFC)</i>.</br>
-[[PDF]](https://exped1230.github.io/BPM-GCN/GaitEmotion-BPM-GCN/static/pdfs/TAFFC_BPM_GCN.pdf)</br>
+[[PDF]](https://exped1230.github.io/BPM-GCN/GaitEmotion-BPM-GCN/static/pdfs/TAFFC_BPM_GCN.pdf)
+[[Project Page]](https://exped1230.github.io/BPM-GCN/GaitEmotion-BPM-GCN/index.html)</br>
 
 <img src="./imgs/fig1.png" width="60%" align=center>
 
