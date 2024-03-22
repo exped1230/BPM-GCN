@@ -12,7 +12,7 @@ train_feeder_args:
   window_size: 48
   data_p_path: train_joint.npy
   data_m_path: train_movement.npy
-  label_path: train_label.npy
+  label_path: train_label.pkl
   feature_path: train_affective.npy
   debug: False
   normalization: False
@@ -20,7 +20,7 @@ train_feeder_args:
 test_feeder_args:
   data_p_path: test_joint.npy
   data_m_path: test_movement.npy
-  label_path: test_label.npy
+  label_path: test_label.pkl
   feature_path: test_affective.npy
   normalization: False
 # model
