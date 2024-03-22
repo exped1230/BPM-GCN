@@ -52,6 +52,10 @@ pip install -r requirements.txt
 
 ***Datasets***: The used datasets are provided in the homepage of [Emotion-Gait](https://gamma.umd.edu/software). 
 
+Note that since the dataset is changed on the official website, we provide the original dataset. The code and dataset are provided for research only.
+[Baidu Drive](https://pan.baidu.com/s/1rNC7SQrwNnZBVMRzPaifZA) 
+(acil)
+
 
 ***Hyperparameter***: You can adjust more details such as epoch, batch size, etc. Please refer to config directory.
 
