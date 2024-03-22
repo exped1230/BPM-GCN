@@ -10,18 +10,18 @@ train_feeder_args:
   random_choose: True
   random_move: True
   window_size: 48
-  data_p_path: /home/ubuntu/jgl/datasets/EGait-dataset/balance/train_joint.npy
-  data_m_path: /home/ubuntu/jgl/datasets/EGait-dataset/balance/train_movement.npy
-  label_path: /home/ubuntu/jgl/datasets/EGait-dataset/balance/train_label.npy
-  feature_path: /home/ubuntu/jgl/datasets/EGait-dataset/balance/train_affective.npy
+  data_p_path: train_joint.npy
+  data_m_path: train_movement.npy
+  label_path: train_label.npy
+  feature_path: train_affective.npy
   debug: False
   normalization: False
 
 test_feeder_args:
-  data_p_path: /home/ubuntu/jgl/datasets/EGait-dataset/balance/test_joint.npy
-  data_m_path: /home/ubuntu/jgl/datasets/EGait-dataset/balance/test_movement.npy
-  label_path: /home/ubuntu/jgl/datasets/EGait-dataset/balance/test_label.npy
-  feature_path: /home/ubuntu/jgl/datasets/EGait-dataset/balance/test_affective.npy
+  data_p_path: test_joint.npy
+  data_m_path: test_movement.npy
+  label_path: test_label.npy
+  feature_path: test_affective.npy
   normalization: False
 # model
 save_model: True
